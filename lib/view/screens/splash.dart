@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class splashscreen extends StatefulWidget {
@@ -10,6 +12,12 @@ class splashscreen extends StatefulWidget {
 class _splashscreenState extends State<splashscreen> {
   @override
   Widget build(BuildContext context) {
+    Timer(
+      Duration(seconds: 3),
+      () {
+        Navigator.of(context).pushNamed('/home');
+      },
+    );
     return Scaffold(
       body: Center(
         child: Image.asset(

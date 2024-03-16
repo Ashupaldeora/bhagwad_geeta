@@ -39,10 +39,7 @@ class _shlokascreenState extends State<shlokascreen> {
                             bhagwadGeetaData[0]['chapters'][adhyaynumber]
                                     ['shloks']
                                 .length,
-                            (index) => shlokaContainer(index))
-                        // List.generate(adhyayIcons.length,
-                        //     (index) => adhyayContainer(index)
-                        ),
+                            (index) => shlokaContainer(index))),
                   ),
                 ),
               ),
@@ -58,12 +55,7 @@ class _shlokascreenState extends State<shlokascreen> {
       enableFeedback: true,
       hoverColor: Colors.orange,
       splashColor: Colors.orange,
-      onTap: () {
-        // switch (index) {
-        //   case 0:
-        //     Navigator.of(context).pushNamed('/adhyay');
-        // }
-      },
+      onTap: () {},
       child: Container(
         padding: EdgeInsets.only(top: 10),
         margin: EdgeInsets.only(bottom: 10),
@@ -124,7 +116,7 @@ class _shlokascreenState extends State<shlokascreen> {
             Container(
               height: 50,
               decoration: BoxDecoration(
-                  color: Colors.black87,
+                  color: Color(0xff2E2E2E),
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(8),
                       bottomRight: Radius.circular(8))),
