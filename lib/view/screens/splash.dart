@@ -15,7 +15,7 @@ class _splashscreenState extends State<splashscreen> {
     Timer(
       Duration(seconds: 3),
       () {
-        Navigator.of(context).pushNamed('/home');
+        Navigator.of(context).pushReplacementNamed('/home');
       },
     );
     return Scaffold(
